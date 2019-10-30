@@ -1,0 +1,58 @@
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="assets/logo.svg"
+  />
+  <span>Welcome Test Subject {{num}}</span>
+</div>
+
+<div class="content" role="main">
+  <mat-card class="waiver-card">
+    <mat-card-header>
+      <mat-card-title>
+        <p class="txt-title">
+            Umbrella Corporation Waiver
+        </p>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <p class="txt-subtitle">
+            Test Subject {{num}}
+        </p>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content *ngIf="!accepted">
+      <p class="txt">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+      </p>
+      <br />
+      <p class="txt-small">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+      </p>
+      <br />
+      <p class="txt-smaller">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+      </p>
+      <br />
+      <p class="txt-smallest">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+      </p>
+    </mat-card-content>
+    <mat-card-content *ngIf="accepted">
+      <p class="txt">
+          Thank you! Your contribution of Test Subject {{num}}'s [assets, biometric data, financial holdings] are appreciated. You can reclaim ownership of your belongings once you visit our official Umbrella Corporation Plague Checkpoint™.
+      </p>
+    </mat-card-content>
+  </mat-card>
+  <br />
+  <button *ngIf="!accepted" (click)="accept()" mat-raised-button color="primary" class="waiver-wrapper">
+    Accept Waiver
+  </button>
+  <button *ngIf="accepted" (click)="newWaiver()" mat-raised-button color="primary" class="waiver-wrapper">
+    Generate New Waiver
+  </button>
+  <img style="height: 50%" src="assets/big_logo.jpg" />
+</div>
+
+
