@@ -48,6 +48,12 @@
     flex: 1;
   }
 
+  .redacted {
+    color: black;
+    background-color: black;
+    white-space: nowrap;
+  }
+
   .toolbar {
     height: 60px;
     display: flex;
@@ -85,6 +91,7 @@
   .waiver-card {
     max-width: 55vw;
     margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   svg.material-icons {

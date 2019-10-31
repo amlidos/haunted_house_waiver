@@ -5,7 +5,7 @@
     alt="Angular Logo"
     src="assets/logo.svg"
   />
-  <span>Welcome Test Subject {{num}}</span>
+  <span>Welcome Test Subject {{display}}</span>
 </div>
 
 <div class="content" role="main">
@@ -18,30 +18,34 @@
       </mat-card-title>
       <mat-card-subtitle>
         <p class="txt-subtitle">
-            Test Subject {{num}}
+            Test Subject {{display}}
         </p>
       </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content *ngIf="!accepted">
       <p class="txt">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+          Welcome to testing zone NP-1337, we've brought you here today for one very important reason. The Umbrella Corporation is exploring the effects of the modified <span class="redacted">t-virus</span> and how much exposure it takes to make a person <span class="redacted">hallucinate</span> within an enclosed area.
       </p>
       <br />
       <p class="txt-small">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+          Please take of note of any strange symptoms that you might experience while within the testing zone. These are largely unknown at the moment, 
+          however, we are learning more and more about the effects of <span class="redacted">t-virus</span> upon the human pysche through the <span class="redacted">8675309</span> test subjects that have participated so far.
       </p>
       <br />
       <p class="txt-smaller">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+          We have collected data from our limited displayber of experiments so far and ascertained that if you experience any side effects such as hearing voices, seeing shadows move, or feeling intense temperature changes
+          then these are completely normal, and should pass within <span class="redacted">10</span> hours.
       </p>
       <br />
       <p class="txt-smallest">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec et odio pellentesque diam volutpat commodo sed. Aliquam ut porttitor leo a diam sollicitudin tempor.
+          Of course, due to the uknown and likely permanently psyche altering effects of the modified <span class="redacted">t-virus</span>, part of 
+          accepting this legally binding waiver includes ceding ownership of your <span class="redacted">[assets, biometric data, financial holdings]</span>.
       </p>
     </mat-card-content>
     <mat-card-content *ngIf="accepted">
       <p class="txt">
-          Thank you! Your contribution of Test Subject {{num}}'s [assets, biometric data, financial holdings] are appreciated. You can reclaim ownership of your belongings once you visit our official Umbrella Corporation Plague Checkpoint™.
+          Thank you! The ceding of your [assets, biometric data, financial holdings] is extremely appreciated. You can reclaim ownership of your belongings once you visit our official Umbrella Corporation Plague Checkpoint™ which
+          can be found at the end of the experiment. This procedure helps us keep you safe™.
       </p>
     </mat-card-content>
   </mat-card>
@@ -52,7 +56,7 @@
   <button *ngIf="accepted" (click)="newWaiver()" mat-raised-button color="primary" class="waiver-wrapper">
     Generate New Waiver
   </button>
-  <img style="height: 50%" src="assets/big_logo.jpg" />
+  <!-- <img style="height: 50%" src="assets/big_logo.jpg" /> -->
 </div>
 
 
